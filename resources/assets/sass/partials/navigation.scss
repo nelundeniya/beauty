@@ -1,0 +1,49 @@
+#top-nav {
+  float: left;
+  width: 100%;
+  border-bottom: solid 1px #a1a1a1;
+}
+#top-nav ul {
+  margin: 0px;
+}
+#top-nav .active {
+  padding-top: 25px;
+  border-top: solid 5px #000000;
+}
+.tn-link {
+  padding: 30px 0px 25px 0px;
+}
+.tn-link a {
+  color: #010101;
+  opacity: 0.63;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 0px 30px;
+  font-family: KozukaGothicEL;
+}
+.reg-header {
+	font-size: 24px;
+	color: #ffffff;
+	opacity: 1.0;
+	font-family: OpenSans;
+}
+.reg-subheader {
+	font-size: 18px;
+	color: #ffffff;
+	opacity: 1.0;
+	font-family: OpenSans;
+}
+.reg-link {
+	font-size: 18px;
+	color: #ffffff;
+	opacity: 1.0;
+	font-family: OpenSans;
+}
+.reg-box {
+	border: solid 1px #515151;
+	padding: 40px 10px;
+	text-allign: center;
+	font-family: OpenSans;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}

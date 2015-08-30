@@ -1,0 +1,13 @@
+@extends('dashboard')
+
+@section('tab-section')
+	@include('dashboard.account.tab-section')
+@endsection
+
+@section('left-links')
+	@include('dashboard.account.left-links')
+@endsection
+
+@section('tab-content')
+	@include('dashboard.account.tab-content')
+@endsection

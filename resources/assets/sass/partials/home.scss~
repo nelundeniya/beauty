@@ -1,0 +1,79 @@
+#home-header {
+  background-image: url("../img/bg-header.jpg");
+  background-size: cover;
+  min-height: 525px;
+  margin-top: 35px;
+  position: relative;
+}
+#logo {
+  position: absolute;
+  top: 20px;
+}
+#search-form {
+  position: absolute;
+  top: 200px;
+  bottom: 60px;
+}
+#key-word {
+  width: 400px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+  float: left;
+}
+#search-btn {
+  background-color: #8fd49a;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: 24px;
+  font-family: MuseoSlab-500;
+  margin-left: 10px;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+.reg-title {
+	color: #212121;
+  font-family: MuseoSlab-500;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+.reg-facebook, .reg-google {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: MuseoSlab-500;
+  font-size: 20px;
+  margin-top: 40px;
+  display: block;
+}
+.reg-facebook {
+	background-color: #2f5f9e;
+}
+.reg-google {
+	background-color: #df4a32;
+}
+.search-icons {
+	margin: 0px;
+}
+.search-links {
+	padding: 0px !important;
+	margin: 0px !important;
+}
+.search-hr-top {
+	border-color: #a1a1a1;
+	margin: 35px 0px 10px 0px;
+}
+.search-text-link {
+	color: #6b6b6b;
+  font-family: MuseoSlab-500;
+  font-size: 14px;
+  padding:10px;
+  text-align: center;
+}
+.search-hr-bottom {
+	border-color: #a1a1a1;
+	margin: 10px 0px 10px 0px;
+}

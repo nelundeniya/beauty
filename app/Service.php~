@@ -1,0 +1,85 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Service extends Model
+{
+	/**
+	 * The attributes that are mass assignable.
+	 *
+	 * @var array
+	 */
+	protected $fillable = [
+		'type',
+		'service_name',
+		'description',
+		'abn',
+		'phone',
+		'mobile',
+		'fax',
+		'email',
+		'website',
+		'address',
+		'suburb',
+		'state',
+		'postcode',
+		'city_id',
+		'facebook',
+		'twitter',
+		'google',
+		'slug',
+		'status'
+	];
+	
+	/**
+	 * The Service belongs to User association.
+	 *
+	 * @var collection
+	 */	
+	public function user()
+  {
+  	return $this->belongsTo('App\User');
+  }
+  
+  /**
+	 * The Service has many Classifieds association.
+	 *
+	 * @var collection
+	 */
+  public function classifieds()
+  {
+  	return $this->hasMany('App\Classified');
+  }
+  
+  /**
+	 * The Service has many Deals association.
+	 *
+	 * @var collection
+	 */
+  public function deals()
+  {
+  	return $this->hasMany('App\Deal');
+  }
+  
+  /**
+	 * The Service has many Jobs association.
+	 *
+	 * @var collection
+	 */
+  public function jobs()
+  {
+  	return $this->hasMany('App\Job');
+  }
+
+	/**
+	 * The Service has many Reviews association.
+	 *
+	 * @var collection
+	 */
+  public function reviews()
+  {
+  	return $this->hasMany('App\Review');
+  }
+}

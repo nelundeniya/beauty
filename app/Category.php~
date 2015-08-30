@@ -1,0 +1,49 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Category extends Model
+{
+	/**
+	 * The attributes that are mass assignable.
+	 *
+	 * @var array
+	 */
+	protected $fillable = [
+		'type',
+		'name',
+		'parent',
+	];
+  
+  /**
+	 * The Category belongs to many Classifieds association.
+	 *
+	 * @var collection
+	 */
+  public function classifieds()
+  {
+  	return $this->belongsToMany('App\Classified');
+  }
+  
+  /**
+	 * The Category belongs to many Deals association.
+	 *
+	 * @var collection
+	 */
+  public function deals()
+  {
+  	return $this->belongsToMany('App\Deal');
+  }
+  
+  /**
+	 * The Category belongs to many Jobs association.
+	 *
+	 * @var collection
+	 */
+  public function jobs()
+  {
+  	return $this->belongsToMany('App\Job');
+  }
+}

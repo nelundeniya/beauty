@@ -1,0 +1,16 @@
+<div class="row" style="background-color:#ffffff;">
+  <div class="medium-12 columns">
+    <div id="top-nav">
+      <ul class="inline-list right hide-for-small-only">
+      	<li class="tn-link active"><a href="#">Home</a></li>
+	  		@if (Auth::guest())
+					<li class="tn-link"><a href="{{ url('/auth/login') }}">Login</a></li>
+					<li class="tn-link"><a href="{{ url('/auth/register') }}">Register</a></li>
+				@else
+					<li class="tn-link"><a href="{{ url('/dashboard') }}">Dashboard</a></li>
+					<li class="tn-link"><a href="{{ url('/auth/logout') }}">Logout</a></li>
+				@endif
+      </ul>
+    </div>
+  </div>
+</div>

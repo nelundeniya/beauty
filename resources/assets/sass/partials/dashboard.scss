@@ -1,0 +1,239 @@
+#common-header {
+  background-image: url("../img/bg-common.jpg");
+  height: 240px;
+  margin-top: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;  
+  position: relative;
+}
+#logo-db {
+  position: absolute;
+  top: 0px;
+}
+#search-form-common {
+  position: absolute;
+  top: 180px;
+}
+.sep-shadow {
+	background-image: url("../img/sep-shadow.jpg");
+  height: 50px;
+  margin: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#key-word {
+  width: 400px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+  float: left;
+}
+#search-btn {
+  background-color: #8fd49a;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: 24px;
+  font-family: MuseoSlab-500;
+  margin-left: 10px;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+.db-business-name {
+  font-family: KozukaGothicEL;
+  font-size: 48px;
+  color: #767676;
+  line-height: 45px;
+}
+.db-stat-list {
+  list-style: none;
+}
+.db-stat-list li {
+  font-family: KozukaGothicEL;
+  font-size: 24px;
+  color: #262626;
+  line-height: 33px;
+}
+.db-subhead {
+  font-family: KozukaGothicEL;
+  font-size: 24px;
+  color: #262626;
+  line-height: 33px;
+  border-bottom: solid 1px #b0b0b0;
+  padding-bottom:20px;
+  margin-bottom: 0px;
+}
+.db-listing-title {
+  color: #262626;
+  font-size: 24px;
+  font-family: MuseoSlab-500;
+  margin-left: 20px;
+}
+.db-listing-img {
+  text-align: center;
+  background-color: #cccccc;
+  font-family: MuseoSlab-500;
+  font-size: 18px;
+  height: 150px;
+  color: #ffffff;
+  width: 100%;
+  padding-top: 50px;
+}
+.db-listing-sh {
+  font-family: MuseoSlab-500;
+  font-size: 18px;
+  color: #262626;
+}
+#db-user-listings {
+  padding-bottom: 100px;
+}
+.db-main-tabs {
+  border-bottom: solid 1px #cccccc;
+  margin-bottom: 30px;
+}
+.db-main-tabs li {
+  background-image: url("../img/tab.png");
+  height: 40px;
+  width: 214px;
+  margin-left: 0px;
+}
+.db-main-tabs li a {
+  font-size: 22px;
+  color: #606060;
+  font-family: MuseoSlab-500;
+  padding: 3px 20px;
+}
+#db-left-links {
+  list-style:none;
+  margin: 0px;
+}
+#db-left-links li {
+  border-bottom: solid 1px #a9a9a9;
+}
+.db-left-link {
+  font-size: 22px;
+  color: #646464;
+  font-family: MuseoSlab-500;
+  padding: 20px 0px;
+  display: block;
+}
+.db-review-stats {
+  color: #6a6a6a;
+  font-family: MuseoSlab-500;
+  font-size: 18px;
+  margin-right: 100px;
+}
+.db-text {
+  color: #888888;
+  font-family: MuseoSlab-500;
+  font-size: 18px;
+}
+.db-text-small {
+  color: #888888;
+  font-family: MuseoSlab-500;
+  font-size: 14px;
+}
+.db-label {
+  color: #606060;
+  font-family: MuseoSlab-500;
+  font-size: 18px;
+  display: block;
+  height: 30px;
+}
+.db-text-input {
+  color: #606060 !important;
+  font-family: MuseoSlab-500 !important;
+  font-size: 18px !important;
+  border-radius: 5px !important;
+}
+.db-submit {
+  color: #ffffff !important;
+  font-size: 24px !important;
+  font-family: MuseoSlab-500 !important;
+  background-color: #6dc25a !important;
+  border-radius: 5px !important;
+  margin-top: 22px !important;
+  padding: 5px 20px !important;
+  border: none !important;
+}
+.label-inline {
+  color: #6a6a6a;
+  font-size: 16px;
+  font-family: MuseoSlab-500;
+  float: left;
+  width: 40%;
+  padding-top: 10px;
+}
+.field-inline {
+  font-family: MuseoSlab-500 !important;
+  font-size: 16px !important;
+  width: 60% !important;
+  color: #606060 !important;
+  border-radius: 5px !important;
+}
+.listing-icon {
+  padding: 20px 0px;
+  display: block;
+  width: 100%;
+  height: 80px;
+  margin-top: 25px;
+}
+.db-listing-title {
+  color: #606060;
+  font-size: 24px;
+  font-family: MuseoSlab-500;
+}
+.listing-cprow {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+.db-small-font{
+  color: #606060;
+  font-size: 14px;
+  font-family: MuseoSlab-500;
+}
+.db-listing {
+  background-color: #cccccc;
+  height: 220px;
+  display: block;
+  margin: 10px;
+}
+/* Overrides */
+
+#dashboard-main .tabs dd.active a, #dashboard-main .tabs .tab-title.active a {
+  background-color: transparent;
+  color: #6a6a6a;
+  font-family: MuseoSlab-500;
+  font-size: 18px;
+  border-left: solid 1px #a9a9a9;
+  padding: 0.5rem 0.8rem;
+  margin: 0.5rem 0.0rem;
+}
+#dashboard-main .tabs {
+  border-left: solid 1px #a9a9a9;
+}
+#dashboard-main .tabs dd > a, #dashboard-main .tabs .tab-title > a {
+  background-color: transparent;
+  color: #6a6a6a;
+  font-family: MuseoSlab-500;
+  font-size: 18px;
+  border-left: solid 1px #a9a9a9;
+  padding: 0.5rem 0.8rem;
+  margin: 0.5rem 0.0rem;
+}
+#dashboard-main .tabs-content {
+  border-left: solid 1px #a9a9a9;
+  padding-left: 20px;
+  min-height: 400px;
+}
+.large-circular {
+	width: 320px;
+	height: 320px;
+	border-radius: 160px;
+	-webkit-border-radius: 160px;
+	-moz-border-radius: 160px;
+	background-repeat: no-repeat;
+  background-position: center center; 
+}

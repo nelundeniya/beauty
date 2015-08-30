@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'MuseoSlab-500';
+  src: url('../fonts/MuseoSlab.eot');
+  src: url('../fonts/MuseoSlab.eot?#iefix') format('embedded-opentype'),url('../fonts/MuseoSlab.woff2') format('woff2'),url('../fonts/MuseoSlab.woff') format('woff'),url('../fonts/MuseoSlab.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'KozukaGothicEL';
+  src: url('../fonts/KozGoPr6N-ExtraLight.otf');
+}

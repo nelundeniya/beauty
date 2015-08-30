@@ -1,0 +1,30 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\City;
+
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
+
+class CitiesController extends Controller
+{
+  public function getTowns()
+  {
+  	$input = \Request::all();
+  	$search = '%'.$input['term'].'%';
+  	$cities = City::where('location', 'like', $search)
+               ->orderBy('location', 'asc')
+               ->take(10)
+               ->get()
+               ->lists('id', 'full_location');
+    //foreach ($cities as $row){
+    //	$new_row['label']=htmlentities(stripslashes($row['location'].', '.$row['state'].' '.$row['postcode']));
+    //  $new_row['value']=htmlentities(stripslashes($row['location'].', '.$row['state'].' '.$row['postcode']));
+    //  $new_row['id'] = $row['id'];
+    //  $row_set[] = $new_row; //build an array
+    //}
+		print_r($cities);  
+  }
+}

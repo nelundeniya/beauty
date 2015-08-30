@@ -1,0 +1,8 @@
+$(document).foundation();
+$("#location").autocomplete({
+      source: "/get_towns",
+      select: function (event, ui) {
+      	console.log(ui.item);
+        $("#city_id").val(ui.item.id);
+      }
+    });

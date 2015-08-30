@@ -1,0 +1,14 @@
+.pr-medium-text {
+	color: #767676;
+  font-size: 30px;
+  font-family: MuseoSlab-500;
+}
+.pr-small-text {
+	color: #767676;
+  font-size: 24px;
+  font-family: MuseoSlab-500;
+}
+.profile-image {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}

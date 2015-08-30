@@ -1,0 +1,7 @@
+$(document).foundation();
+$("#location").autocomplete({
+      source: "/auth/get_towns",
+      select: function (event, ui) {
+        $("#location-id").val(ui.item.id);
+      }
+    });

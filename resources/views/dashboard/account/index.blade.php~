@@ -1,0 +1,41 @@
+<div class="medium-10 medium-centered columns">
+  <div class="row" style="border-bottom: solid 1px #a9a9a9;">
+    <div class="medium-3 columns">
+      
+    </div>
+    <div class="medium-9 columns">
+      <ul class="tabs" data-tab>
+        <li class="tab-title active"><a href="#panel1" style="border-left: none !important;">Review Dashboard</a></li>
+        <li class="tab-title"><a href="#panel2">Request Reviews</a></li>
+        <li class="tab-title"><a href="#panel3">Submit Reviews</a></li>
+        <li class="tab-title"><a href="#panel4">Review FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-3 columns" style="padding:0px;">
+      <ul id="db-left-links">
+			  <li><a href="/dashboard/account/reviews" class="db-left-link">Reviews</a></li>
+			  <li><a href="/dashboard/account/settings" class="db-left-link">Account Settings</a></li>
+			  <li><a href="/dashboard/account/business-info" class="db-left-link">Business Information</a></li>
+			  <li><a href="/dashboard/account/job-seekers" class="db-left-link">Find Job Seekers</a></li>
+			</ul>
+    </div>
+    <div class="medium-9 columns">
+      <div class="tabs-content">
+        <div class="content active" id="panel1">
+          @include('dashboard.account.reviews.review-list')
+        </div>
+        <div class="content" id="panel2">
+          <?php //$this->load->view('dashboard/account/reviews/request-review'); ?>
+        </div>
+        <div class="content" id="panel3">
+          <?php //$this->load->view('dashboard/account/reviews/submit-review'); ?>
+        </div>
+        <div class="content" id="panel4">
+          <?php //$this->load->view('dashboard/account/reviews/review-faq'); ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
