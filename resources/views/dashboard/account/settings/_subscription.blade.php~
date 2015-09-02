@@ -1,0 +1,17 @@
+<div class="row">
+	<div class="medium-6 columns db-listing-title">Current Subscription :</div>
+	<div class="medium-6 columns db-listing-title">Free</div>
+</div>
+<div class="row">
+	<div class="medium-6 columns db-listing-title">Payment Method :</div>
+	<div class="medium-6 columns db-listing-title">Credit Card</div>
+</div>
+<div class="row">
+	<div class="medium-6 columns db-listing-title">Card Number</div>
+	<div class="medium-6 columns db-listing-title">34** **** **** ****</div>
+</div>
+<div class="row">
+	<div class="medium-12 columns db-listing-title">
+		{!! Form::submit('Update Payment Details', ['class' => 'db-submit right']) !!}
+	</div>
+</div>

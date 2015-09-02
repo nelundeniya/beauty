@@ -15,13 +15,19 @@ Entrust::routeNeedsRole('dashboard*', 'business');
 
 Entrust::routeNeedsRole('profile*', 'member');
 
-Route::get('profile', 'AccountController@getProfile');
+Route::get('profile', 'ProfileController@getProfile');
+Route::get('profile/account', 'ProfileController@getProfile');
+Route::post('profile/account', 'ProfileController@postProfile');
+Route::get('profile/reviews', 'ProfileController@getReviews');
+Route::get('profile/jobs', 'ProfileController@getJobs');
 
 Route::get('dashboard', 'AccountController@getReviews');
 Route::get('get_towns/{term?}', 'CitiesController@getTowns');
 
 Route::get('dashboard/account', 'AccountController@getReviews');
 Route::get('dashboard/account/reviews', 'AccountController@getReviews');
+Route::post('dashboard/account/request_reviews', 'AccountController@postReviewRequests');
+
 Route::get('dashboard/account/settings', 'AccountController@getSettings');
 Route::get('dashboard/account/business', 'AccountController@getBusiness');
 Route::get('dashboard/account/jobs', 'AccountController@getJobs');

@@ -20,7 +20,7 @@ class CreateServicesTable extends Migration {
 				->references('id')->on('users')
 				->onDelete('cascade');
 			$table->string('type', 20);
-			$table->string('name');
+			$table->string('service_name');
 			$table->text('description')->nullable();
 			$table->string('abn', 20)->nullable();
 			$table->string('phone', 20);

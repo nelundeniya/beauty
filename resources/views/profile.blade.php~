@@ -20,7 +20,7 @@
   <div class="medium-12 columns">
     <div class="row">
       <div class="medium-10 columns">
-        <h1 class="db-business-name">Hello<br />{{ Auth::user()->name }}</h1>
+        <h1 class="db-business-name">Hello<br />{{ $profile->name }}</h1>
       </div>
       <div class="medium-2 columns">
         <ul class="db-stat-list">
@@ -33,15 +33,32 @@
 		<div class="row">
 			<div class="medium-10 medium-centered columns">
 				<div class="row">
-					<div class="medium-6 columns">
+					<div class="medium-8 columns profile-image">
 						<div class="large-circular" style="	background-image: url('{{ Auth::user()->avatar }}'); background-size:cover;"></div>
 					</div>
-					<div class="medium-6 columns">
+					<div class="medium-4 columns">
+						<div class="row">
+						<div class="medium-12 columns">
 						<h4 class="pr-medium-text">Looking For Work ?</h4>
-						<ul class="inline-list">
+						<ul class="inline-list right">
 							<li class="pr-small-text">YES</li>
+							<li><input type="checkbox" name="yes" value="Y" class="db-checkbox" /></li>							
 							<li class="pr-small-text">NO</li>
+							<li><input type="checkbox" name="no" value="N" class="db-checkbox" /></li>
 						</ul>
+						</div>
+						</div>
+						<div class="row">
+						<div class="medium-12 columns">
+						<h4 class="pr-medium-text">Job Categories</h4>
+						<ul class="medium-block-grid-4">
+							<li><img src="/img/ico-db-clsf.png" /></li>
+							<li><img src="/img/ico-db-clsf.png" /></li>
+							<li><img src="/img/ico-db-clsf.png" /></li>
+							<li><img src="/img/ico-db-clsf.png" /></li>
+						</ul>
+						</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -63,7 +80,9 @@
 						</ul>
 			    </div>
 			    <div class="medium-9 columns">
-			      <div class="">
+			      <div class="" style="border-left: solid 1px #a1a1a1; min-height: 300px; padding-left: 20px; padding-top: 20px;">
+			      	@include('shared.form_errors')
+							@include('shared.form_flash')
 			        @yield('content')
 			      </div>
 			    </div>

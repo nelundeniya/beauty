@@ -41,7 +41,7 @@ class CreateServicesTable extends Migration {
 			$table->string('logo')->nullable();
 			$table->string('status', 20);
 			$table->string('slug')->unique();
-			$table->integer('rating')->unsigned()->default(0);
+			$table->decimal('rating', 2, 1)->default(0.0);
 			$table->integer('views')->unsigned()->default(0);
 			$table->timestamps();
 		});

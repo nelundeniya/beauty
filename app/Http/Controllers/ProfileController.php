@@ -1,0 +1,44 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
+
+class ProfileController extends Controller
+{
+  protected $data;
+	
+	public function __construct()
+	{
+		$this->middleware('auth');
+		$this->data = array(
+			'profile'	=> \Auth::user(),
+			'reviews'	=> \Auth::user()->reviews->all(),
+		);
+	}
+	
+	public function getProfile()
+	{
+    return view('profile.account.account-details', $this->data);
+	}
+	
+	public function postProfile()
+	{
+		\Session::flash('flash_message', 'Account Details Updated Successfully!');
+		return view('profile.account.account-details', $this->data);
+	}
+	
+	public function getReviews()
+	{
+    return view('profile.reviews.review-list', $this->data);
+	}
+	
+	public function getJobs()
+	{
+		$this->data['jobs'] = \Auth::user()->jobs->all();
+    return view('profile.jobs.job-list', $this->data);
+	}
+}

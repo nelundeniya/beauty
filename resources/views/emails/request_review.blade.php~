@@ -1,0 +1,7 @@
+Dear {{ $user['name'] }},
+This is my business listed with Beauty Collective.
+<a href="{{ $user['business_url'] }}">{{ $user['business'] }}</a>
+I shall be thankful to you if you could kindly add a review to my business visiting above link.
+
+Regards
+{{ $user['owner'] }} 

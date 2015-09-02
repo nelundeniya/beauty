@@ -1,0 +1,6 @@
+<?php
+
+public function getRatingImage($rating)
+{
+	return str_replace('.', '-', $rating).'-stars.png';
+}

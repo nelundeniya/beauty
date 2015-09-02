@@ -1,5 +1,3 @@
-@include('shared.form_errors')
-@include('shared.form_flash')
 {!! Form::open(['url' => '/dashboard/account/update-account-detail']) !!}
 <div class="row">
   <div class="medium-12 columns">

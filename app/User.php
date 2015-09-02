@@ -54,6 +54,11 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
   	return $this->hasMany('App\Review');
   }
   
+  public function jobs()
+  {
+  	return $this->belongsToMany('App\Job');
+  }
+  
   public function findByUserNameOrCreate($userData, $provider)
   {
   	$user = User::where('provider_id', '=', $userData->id)->first();

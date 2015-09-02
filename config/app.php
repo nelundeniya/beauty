@@ -197,6 +197,7 @@ return [
         'Html'			=> Illuminate\Html\HtmlFacade::class,
 				'Entrust' 	=> Zizaco\Entrust\EntrustFacade::class,
 				'Socialize' => Laravel\Socialite\Facades\Socialite::class,
+				'Carbon' 		=> Carbon\Carbon::class,
     ],
 
 ];
